@@ -8,10 +8,10 @@
 .grid1-2-1 .aside-r{float:right;}
 
 /* equal columns layout */
-.grid-col-equal{overflow:hidden;}
+.grid-col-equal{/*overflow:hidden;TODO*/}
 .grid-col-equal .grid-col{margin-bottom:-10000px;padding-bottom:10000px;}
 
 /* block style */
-.block-a{border:1px solid #64b9f8;padding:7px;}
+.block-a{border:1px solid #64b9f8;padding:7px;margin-bottom:6px;}
 .block-b{border:1px solid #8dc7f0;padding:4px;background:#c5e5ff;}
 .block-c{border:1px solid #d4d5d7;padding:4px;background:#e9ecef;}

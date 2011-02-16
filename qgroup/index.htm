@@ -11,27 +11,91 @@
 </head>
 <body>
 	<header id="header" class="wrap">
-		<section id="top-nav"></section>
-		<section id="banner">
-			<figure><img src="img/logo.jpg" alt="" /></figure>
-			<h1>
-				<a href="#" title="爱生活爱自己">爱生活爱自己</a>	
-			</h1>
-			<p class="slogan">[广东省]同一个时代，不同的两个时空，超越时空的声音，带动你</p>
+		<section id="top-nav">
+			<a class="logo" href="#"><img alt="logo" src="img/logo.jpg" width="60" height="18"/></a>
+			<ul class="toplink clearfix">
+				<li><a href="#" title="首页">首页</a></li>
+				<li class="split">|</li>
+				<li><a href="#" title="帮助">帮助</a></li>
+				<li class="split">|</li>
+				<li>
+					<div id="pop-igroups">
+						<a id="btn-igroups" class="isprite" href="#"><span>我加入的群</span></a>
+						<div class="pop-igroups-ct"></div>
+					</div>
+				</li>
+			</ul>
+			<a id="login-status" href="#" title="退出登录">退出登录</a>
+		</section>
+		<section id="banner" class="clearfix">
+			<img src="img/banner160x70.jpg" width="160" height="70" alt="群空间" />
+			<h1>爱生活爱自己</h1>
+			<p class="slogan"><strong class="place">[广东省]</strong>同一个时代，不同的两个时空，超越时空的声音，带动你</p>
 		</section>
 	</header>
-	<section id="meta-bar"></section>
+	<section id="meta-bar" class="wrap">
+		<div class="box-group-meta clearfix">
+			<div class="g-foundInfo">
+				<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+				<span class="g-founder">飘飘</span>
+				创建于
+				<span class="g-date">2011.02.16</span>
+			</div>
+			<div class="g-links"><a href="#" class="isprite btn-gzoneAdmin"></a></div>
+		</div>
+	</section>
 	<section id="main" class="wrap">
 		<div class="grid1-2-1 grid-col-equal">
 			<div class="grid-main grid-col">
 				<div class="grid-main-core">
-					<div class="block-notice"></div>
+					<div class="block-notice">
+						<img class="notice-icon" alt="" src="img/notice180x110.jpg" width="180" height="110"/>
+						<h4 class="notice-title">群内公告</h4>
+						<p class="notice-ct">
+						    为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了
+						</p>
+					</div>
 					<div class="block-topics"></div>
 				</div>
 			</div>
 			<aside class="aside-l grid-col">
-				<div class="block-groupInfo block-a"></div>
-				<nav class="block-nav block-a"></nav>
+				<div class="block-groupInfo block-a">
+					<h3>普通群<span class="g-type">[<em>非公开</em>]</span><a href="#" class="isprite btn-upgrade" title="升级群"></a></h3>
+					<ul class="stat-info">
+						<li><span class="lbl">群成员数</span>78/100人</li>
+						<li>
+							<span class="lbl">相册空间</span>
+							<div class="isprite barchart" data-max="10" data-now="3">
+								<div class="isprite barchart-inside" style="width:30%"></div>
+							</div>
+							3/10M
+						</li>
+						<li>
+							<span class="lbl">硬盘空间</span>
+							<div class="isprite barchart" data-max="16" data-now="10">
+								<div class="isprite barchart-inside" style="width:62.5%"></div>
+							</div>
+							10/16M
+						</li>
+					</ul>
+				</div>
+				<nav class="block-nav block-a">
+					<ul>
+						<li class="home"><h3><a href="#">首页</a></h3></li>
+						<li class="bbs on">
+							<h3><a href="#">论坛</a></h3>
+							<ul class="sub-nav dot-list">
+								<li><a href="#">讨论版</a></li>
+								<li><a href="#">贴图版</a></li>
+								<li><a href="#">随写</a></li>
+								<li><a href="#">分享</a></li>
+							</ul>
+						</li>
+						<li class="album"><h3><a href="#">相册</a></h3></li>
+						<li class="gtalk"><h3><a href="#">群聊天记录</a></h3></li>
+						<li class="gmember"><h3><a href="#">群成员</a></h3></li>
+					</ul>
+				</nav>
 			</aside>
 			<aside class="aside-r grid-col">
 				<div class="block-groupActs block-b"></div>
