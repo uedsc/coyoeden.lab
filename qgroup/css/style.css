@@ -1,0 +1,8 @@
+﻿/*== 页面样式 ==*/
+/* 3 columns layout */
+.grid1-2-1 .grid-main-core{margin:0 170px 0 180px;}
+.grid1-2-1 .aside-l{width:180px;background:#c5e5fe;padding:5px;}
+.grid1-2-1 .aside-r{margin-left:-170px;width:170px;padding:4px;}
+
+/* left column */
+

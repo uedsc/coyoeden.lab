@@ -1,0 +1,16 @@
+﻿/*== 结构样式 ==*/
+.wrap{width:950px;margin:0 auto;}
+/* 3 columns layout */
+.grid1-2-1{zoom:1}
+.grid1-2-1:after{content:'\20';display:block;clear:both;}
+.grid1-2-1 .grid-main{float:left;min-height:1px;/*Fix bugs when no content*/width:100%;}
+.grid1-2-1 .aside-l{float:left;margin-left:-100%;}
+.grid1-2-1 .aside-r{float:right;}
+
+/* equal columns layout */
+.grid-col-equal{overflow:hidden;}
+.grid-col-equal .grid-col{margin-bottom:-10000px;padding-bottom:10000px;}
+
+/* block style */
+.block-a{border:1px solid #64b9f8;padding:7px;}
+.block-b{border:1px solid #8dc7f0;padding:4px;background:#c5e5ff}

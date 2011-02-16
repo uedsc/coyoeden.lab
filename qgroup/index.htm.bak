@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--[if IE]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+</head>
+<body>
+	<header id="header" class="wrap">
+		<section id="top-nav"></section>
+		<section id="banner">
+			<figure><img src="img/logo.jpg" alt="" /></figure>
+			<h1>
+				<a href="#" title="爱生活爱自己">爱生活爱自己</a>	
+			</h1>
+			<p class="slogan">[广东省]同一个时代，不同的两个时空，超越时空的声音，带动你</p>
+		</section>
+	</header>
+	<section id="meta-bar"></section>
+	<section id="main" class="wrap">
+		<div class="grid1-2-1 grid-col-equal">
+			<div class="grid-main grid-col">
+				<div class="grid-main-core">
+								
+				</div>
+			</div>
+			<aside class="aside-l grid-col">
+				<div class="block-groupInfo block-a"></div>
+				<nav class="block-nav block-a"></nav>
+			</aside>
+			<aside class="aside-r grid-col">
+				<div class="block-groupActs block-b"></div>
+				<div class="block-groupUsers block-c"></div>
+			</aside>
+		</div>
+	</section>
+	<footer id="footer" class="wrap"></footer>
+</body>
+</html>
