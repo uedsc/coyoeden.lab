@@ -28,7 +28,7 @@
 .g-equalh-mask .col-aside-r {
 	float:left;
 	position:relative;
-	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+	padding:0;	/* no left and right padding on columns, we just make them narrower instead 
 					only padding top and bottom is included here, make it whatever value you need */
 	overflow:hidden;
 }
@@ -66,5 +66,5 @@
 .block-b{border:1px solid #8dc7f0;padding:4px;background:#c5e5ff;}
 .block-c{border:1px solid #d4d5d7;padding:4px;background:#e9ecef;}
 .block-ft{padding: 0 8px;}
-.block-c-inside,.block-b-inside{background:#fff;border:1px solid #d4d5d7}
+.block-c-inside,.block-b-inside{background:#fff;border:1px solid #d4d5d7;zoom:1}
 .block-b-inside{border-color:#8dc7f0;}

@@ -31,6 +31,8 @@
 									<li><a href="#">爱音乐爱自己</a></li>
 									<li><a href="#">爱音乐爱自己</a></li>
 									<li class="hot"><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
 								</ul>
 							</div>
 							<div class="slide-bar">
@@ -271,7 +273,7 @@
 												</tr>
 												<tr>
 													<th>
-														<div class="topic-data">
+														<div class="topic-data icon-music">
 															<a class="topic-group" href="#" target="_blank">[通知版]</a>
 															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
 														</div>
@@ -324,22 +326,25 @@
 						</div>
 						<aside class="col-aside-l">
 							<div class="block-groupInfo block-a">
-								<h3>普通群<span class="g-type">[<em>非公开</em>]</span><a href="#" class="isprite btn-upgrade" title="升级群"></a></h3>
-								<ul class="stat-info">
-									<li><span class="lbl">群成员数</span>78/100人</li>
+								<div class="block-hd">
+									<h3>普通群<span class="g-type">[<em>非公开</em>]</span></h3>
+									<a href="#" class="more isprite btn-upgrade" title="升级群"></a>
+								</div>
+								<ul class="stat-info clearfix">
+									<li><span class="lbl">群成员数</span><span class="txt">78/100人</span></li>
 									<li>
 										<span class="lbl">相册空间</span>
 										<div class="isprite barchart" data-max="10" data-now="3">
 											<div class="isprite barchart-inside" style="width:30%"></div>
 										</div>
-										3/10M
+										<span class="txt">3/10M</span>
 									</li>
 									<li>
 										<span class="lbl">硬盘空间</span>
 										<div class="isprite barchart" data-max="16" data-now="10">
 											<div class="isprite barchart-inside" style="width:62.5%"></div>
 										</div>
-										10/16M
+										<span class="txt">10/16M</span>
 									</li>
 								</ul>
 							</div>
