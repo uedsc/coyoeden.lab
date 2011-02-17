@@ -3,8 +3,8 @@
 * @desc QQ Group index client logic
 * @dependency QLib.js,jquery.js,jquery.draggable
 */
-QLib.M("GroupIndex",(function(){
-	var p=pub={};
+;QLib.M("GroupIndex",(function(){
+	var p={},pub={};
 	//private area
 	//ui cache
 	p.ui={
@@ -15,7 +15,7 @@ QLib.M("GroupIndex",(function(){
 	};
 	//left side navigation
 	p.initNav=function(){
-		var $temp=$nav=null;
+		var $temp=null,$nav=null;
 		p.ui.$nav.click(function(){
 			return false;
 		}).find(".has-sub").click(function(e){

@@ -58,7 +58,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #pop-igroups{position:relative;}
 #btn-igroups{border:1px solid #4caae8;padding:2px 0;background-color:#def0ff;text-decoration:none;color:#0066a4;background-position:-78px -434px;}
 #btn-igroups span{border:1px solid #c5e5ff;padding:1px 18px 1px 7px;}
-#pop-igroups-ct{border:1px solid #4caae8;padding:3px;background-color:#def0ff;position:absolute;z-index:1000;width:161px;left:0;top:26px;}
+#pop-igroups-ct{border:1px solid #4caae8;padding:3px;background-color:#def0ff;position:absolute;z-index:1000;width:161px;left:0;top:26px;_top:25px;}
 .noslide #pop-igroups-ct{width:145px;}
 #pop-igroups-ct .slide-mask,#pop-igroups-ct .slide-bar{float:left;}
 #pop-igroups-ct .slide-mask{width:145px;height:146px;overflow:hidden;background:#fff;position:relative;}

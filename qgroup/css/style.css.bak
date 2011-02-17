@@ -69,7 +69,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #pop-igroups-ct .slider{cursor:pointer;position:relative;width:14px;height:50px;background:#c4e2f7;border-right:1px solid #fff;border-bottom:1px solid #fff;}
 #list-igroup{position:absolute;left:0;}
 #list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:133px;overflow:hidden;float:none;display:block;}
-
+#list-igroup .hot a{color:red;}
 #banner{border:1px solid #458bc1;background:url(../img/banner_bg5x70.jpg) center center repeat-x;color:#fff;}
 #banner img{float:left;}
 #banner .place{font-weight:bold;margin-right:8px;}
