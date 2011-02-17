@@ -59,6 +59,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #btn-igroups{border:1px solid #4caae8;padding:2px 0;background-color:#def0ff;text-decoration:none;color:#0066a4;background-position:-78px -434px;}
 #btn-igroups span{border:1px solid #c5e5ff;padding:1px 18px 1px 7px;}
 #pop-igroups-ct{border:1px solid #4caae8;padding:3px;background-color:#def0ff;position:absolute;z-index:1000;width:161px;left:0;top:26px;}
+.noslide #pop-igroups-ct{width:145px;}
 #pop-igroups-ct .slide-mask,#pop-igroups-ct .slide-bar{float:left;}
 #pop-igroups-ct .slide-mask{width:145px;height:146px;overflow:hidden;background:#fff;}
 #pop-igroups-ct .slide-bar{height:146px;width:15px;background:background-color:#def0ff;border-left:1px solid #c4e2f7;position:relative;}
@@ -66,7 +67,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #pop-igroups-ct .btn-slide-dwn{bottom:0;top:auto;background-position:-150px -477px;}
 #pop-igroups-ct .slider-wrap{position:absolute;width:15px;height:116px;top:15px;left:0;}
 #pop-igroups-ct .slider{cursor:pointer;position:relative;width:14px;height:50px;background:#c4e2f7;border-right:1px solid #fff;border-bottom:1px solid #fff;}
-#list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:145px;overflow:hidden;}
+#list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:133px;overflow:hidden;float:none;display:block;}
 
 #banner{border:1px solid #458bc1;background:url(../img/banner_bg5x70.jpg) center center repeat-x;color:#fff;}
 #banner img{float:left;}
@@ -115,7 +116,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 .block-nav .gmember h3{background-position:0 -174px;}
 .block-nav a{color:#1f5595;text-decoration:underline;}
 
-.block-nav .sub-nav{margin:0 0 7px 34px;}
+.block-nav .sub-nav{margin:0 0 7px 34px;display:none;}
 .block-nav .sub-nav li{height:18px;line-height:18px;padding-left:8px;border:none;margin-top:0;}
 
 /* middle column */

@@ -66,7 +66,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #pop-igroups-ct .btn-slide-dwn{bottom:0;top:auto;background-position:-150px -477px;}
 #pop-igroups-ct .slider-wrap{position:absolute;width:15px;height:116px;top:15px;left:0;}
 #pop-igroups-ct .slider{cursor:pointer;position:relative;width:14px;height:50px;background:#c4e2f7;border-right:1px solid #fff;border-bottom:1px solid #fff;}
-#list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:145px;overflow:hidden;}
+#list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:133px;overflow:hidden;float:none;display:block;}
 
 #banner{border:1px solid #458bc1;background:url(../img/banner_bg5x70.jpg) center center repeat-x;color:#fff;}
 #banner img{float:left;}
@@ -77,7 +77,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 .box-group-meta{height:18px;background:#ececec;padding:2px 5px 2px 8px;line-height:18px;}
 .g-foundInfo{float:left}
 .g-links{float:right;}
-.g-foundInfo span{padding:0 8px;}
+.g-foundInfo span{padding:0 6px;}
 .btn-gzoneAdmin{display:block;height:18px;width:69px;background-position:0 -338px;}
 
 
@@ -115,7 +115,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 .block-nav .gmember h3{background-position:0 -174px;}
 .block-nav a{color:#1f5595;text-decoration:underline;}
 
-.block-nav .sub-nav{margin:0 0 7px 34px;}
+.block-nav .sub-nav{margin:0 0 7px 34px;display:none;}
 .block-nav .sub-nav li{height:18px;line-height:18px;padding-left:8px;border:none;margin-top:0;}
 
 /* middle column */

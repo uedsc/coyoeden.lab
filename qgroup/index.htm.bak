@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Untitled Page</title>
+    <title>QQ群空间-group.qq.com</title>
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--[if IE]>
@@ -35,11 +35,11 @@
 									<li><a href="#">爱音乐爱自己</a></li>
 								</ul>
 							</div>
-							<div class="slide-bar">
+							<div id="slide-bar" class="slide-bar">
 								<a id="btn-slide-up" href="#" class="isprite btn-slide-up"></a>
 								<a id="btn-slide-dwn" href="#" class="isprite btn-slide-dwn"></a>
 								<div class="slider-wrap">
-									<div class="slider"></div>
+									<div id="slider" class="slider"></div>
 								</div>
 							</div>
 						</div>
@@ -273,7 +273,7 @@
 												</tr>
 												<tr>
 													<th>
-														<div class="topic-data icon-music">
+														<div class="topic-data isprite icon-music">
 															<a class="topic-group" href="#" target="_blank">[通知版]</a>
 															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
 														</div>
@@ -349,20 +349,39 @@
 								</ul>
 							</div>
 							<nav class="block-nav block-a">
-								<ul>
+								<ul id="nav-main">
 									<li class="home"><h3><a href="#">首页</a></h3></li>
-									<li class="bbs on">
+									<li class="bbs has-sub on">
 										<h3><a href="#">论坛</a></h3>
-										<ul class="sub-nav dot-list">
+										<ul class="sub-nav dot-list" style="display:block;">
 											<li><a href="#">讨论版</a></li>
 											<li><a href="#">贴图版</a></li>
 											<li><a href="#">随写</a></li>
 											<li><a href="#">分享</a></li>
 										</ul>
 									</li>
-									<li class="album"><h3><a href="#">相册</a></h3></li>
-									<li class="gtalk"><h3><a href="#">群聊天记录</a></h3></li>
-									<li class="gmember"><h3><a href="#">群成员</a></h3></li>
+									<li class="album has-sub">
+										<h3><a href="#">相册</a></h3>
+										<ul class="sub-nav dot-list">
+											<li><a href="#">相册1</a></li>
+											<li><a href="#">相册2</a></li>
+											<li><a href="#">相册3</a></li>
+											<li><a href="#">相册4</a></li>
+											<li><a href="#">相册5</a></li>
+										</ul>
+									</li>
+									<li class="gtalk has-sub">
+										<h3><a href="#">群聊天记录</a></h3>
+										<ul class="sub-nav dot-list">
+											<li><a href="#">最新10条</a></li>
+											<li><a href="#">今天的记录</a></li>
+											<li><a href="#">昨天的记录</a></li>
+											<li><a href="#">昨天前的记录</a></li>
+										</ul>
+									</li>
+									<li class="gmember">
+										<h3><a href="#">群成员</a></h3>
+									</li>
 								</ul>
 							</nav>
 						</aside>
@@ -504,5 +523,16 @@
 		</p>
 			
 	</footer>
+	
+	<!--js:TODO:compress-->
+	<script type="text/javascript" src="js/jquery-ui-1.8.9.slider.min.js"></script> 
+	<script type="text/javascript" src="js/QLib.js"></script>  
+	<script type="text/javascript" src="js/QGroup.index.js"></script> 
+	<script type="text/javascript">
+	//<![CDATA[
+	QLib.Init({});
+	//]]>
+	</script> 
+	<!--/js-->
 </body>
 </html>
