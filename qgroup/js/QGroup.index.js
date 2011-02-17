@@ -1,6 +1,7 @@
 /*
 * @author Levin
 * @desc QQ Group index client logic
+* @dependency QLib.js,jquery.js,jquery.draggable
 */
 QLib.M("GroupIndex",(function(){
 	var p=pub={};
@@ -105,11 +106,24 @@ QLib.M("GroupIndex",(function(){
 		});
 
 	};
+	//chars tailing
+	p.initTailing=function(){
+		$(".data-tail").each(function(i,o){
+			o=$(o);
+			(function($d,size,css){
+				$d.find(css).each(function(i1,o1){
+					o1=$(o1);
+					o1.text(QLib.Tail(o1.text(),size));
+				});
+			})(o,o.data("tailsize"),o.data("tailcss"));
+		});
+	};
 	//public area
 	pub.init=function(opts){
 		p.initNav();
 		p.initPopup();
 		p.initSlider();
+		p.initTailing();
 	};
 	return pub;
 })());
