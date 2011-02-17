@@ -21,7 +21,26 @@
 				<li>
 					<div id="pop-igroups">
 						<a id="btn-igroups" class="isprite" href="#"><span>我加入的群</span></a>
-						<div class="pop-igroups-ct"></div>
+						<div id="pop-igroups-ct" class="pop-igroups-ct clearfix">
+							<div class="slide-mask">
+								<ul id="list-igroup" class="slide-ct">
+									<li><a href="#">web前端架构师交流...</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li><a href="#">爱音乐爱自己</a></li>
+									<li class="hot"><a href="#">爱音乐爱自己</a></li>
+								</ul>
+							</div>
+							<div class="slide-bar">
+								<a id="btn-slide-up" href="#" class="isprite btn-slide-up"></a>
+								<a id="btn-slide-dwn" href="#" class="isprite btn-slide-dwn"></a>
+								<div class="slider-wrap">
+									<div class="slider"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -466,13 +485,13 @@
 	</section>
 	<footer id="footer" class="wrap">
 		<p>
-			<a href="#" target="_blank">关于腾讯</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">About tencent</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">服务条款</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">广告服务</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">腾讯招聘</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">客服中心</a>&nbsp;&nbsp;
-			<a href="#" target="_blank">网站导航</a>&nbsp;&nbsp;
+			<a href="#" target="_blank">关于腾讯</a>
+			<a href="#" target="_blank">About tencent</a>
+			<a href="#" target="_blank">服务条款</a>
+			<a href="#" target="_blank">广告服务</a>
+			<a href="#" target="_blank">腾讯招聘</a>
+			<a href="#" target="_blank">客服中心</a>
+			<a href="#" target="_blank">网站导航</a>
 		</p>
 		<p class="cpr">Copyright©2008-2012 Tencent Inc.All Rights Reserved</p>
 		<p class="extra">
