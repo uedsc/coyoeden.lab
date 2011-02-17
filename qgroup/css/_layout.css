@@ -1,17 +1,70 @@
-﻿/*== 结构样式 ==*/
-.wrap{width:950px;margin:0 auto;}
-/* 3 columns layout */
-.grid1-2-1{zoom:1}
-.grid1-2-1:after{content:'\20';display:block;clear:both;}
-.grid1-2-1 .grid-main{float:left;min-height:1px;/*Fix bugs when no content*/width:100%;}
-.grid1-2-1 .aside-l{float:left;margin-left:-100%;}
-.grid1-2-1 .aside-r{float:right;}
+﻿.wrap{width:950px;margin:0 auto;}
+/* 3 columns layout 
+--------------------------------------------------*/
+.wrap,.g-3col,.block-hd,.block-ct,.block-ft{zoom:1}
+.wrap:after,.g-3col:after,.block-hd:after,.block-ct:after,.block-ft:after{content:'\20';display:block;clear:both;}
 
-/* equal columns layout */
-.grid-col-equal{/*overflow:hidden;TODO*/}
-.grid-col-equal .grid-col{margin-bottom:-10000px;padding-bottom:10000px;}
+/* equal columns layout 
+---------------------------------------------------*/
+.g-equalh-mask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings 
+-------------------------------------------------*/
+.g-equalh-r,
+.g-equalh-m,
+.g-equalh-l,
+.col-mask {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.g-equalh-mask .col-main,
+.g-equalh-mask .col-aside-l,
+.g-equalh-mask .col-aside-r {
+	float:left;
+	position:relative;
+	padding:0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings 
+------------------------------------------------*/
+.g-3col {
+	background:#eee;		/* right column background colour */
+}
+.g-3col .g-equalh-m {
+	right:25%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.g-3col .g-equalh-l {
+	right:50%;			/* width of the middle column */
+	background:#f4f4f4;	/* left column background colour */
+}
+.g-3col .col-main {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+	min-height:1px;/*Fix bugs when no content*/
+}
+.g-3col .col-aside-l {
+	width:21%;			/* Width of left column content (column width minus padding on either side) */
+	left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.g-3col .col-aside-r {
+	width:21%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}	
 
-/* block style */
+/* block style 
+---------------------------------------------------*/
 .block-a{border:1px solid #64b9f8;padding:7px;margin-bottom:6px;}
 .block-b{border:1px solid #8dc7f0;padding:4px;background:#c5e5ff;}
 .block-c{border:1px solid #d4d5d7;padding:4px;background:#e9ecef;}
+.block-ft{padding: 0 8px;}
+.block-c-inside,.block-b-inside{background:#fff;border:1px solid #d4d5d7}
+.block-b-inside{border-color:#8dc7f0;}

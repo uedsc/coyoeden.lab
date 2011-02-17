@@ -45,62 +45,429 @@
 		</div>
 	</section>
 	<section id="main" class="wrap">
-		<div class="grid1-2-1 grid-col-equal">
-			<div class="grid-main grid-col">
-				<div class="grid-main-core">
-					<div class="block-notice">
-						<img class="notice-icon" alt="" src="img/notice180x110.jpg" width="180" height="110"/>
-						<h4 class="notice-title">群内公告</h4>
-						<p class="notice-ct">
-						    为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了
-						</p>
+		<div class="g-equalh-mask g-3col">
+			<div class="g-equalh-m">
+				<div class="g-equalh-l">
+					<div class="col-mask">
+						<div class="col-main">
+							<div class="col-main-core">
+								<div class="block-notice">
+									<img class="notice-icon" alt="" src="img/notice180x110.jpg" width="180" height="110"/>
+									<h4 class="notice-title">群内公告</h4>
+									<p class="notice-ct">
+										为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了爱你！为了赎罪，我选择了爱 你！为了赎罪，我选择了
+									</p>
+								</div>
+								<div class="block-topics">
+									<div class="block-hd">
+										<h4><a href="#" title="进入论坛">群空间论坛</a></h4>
+										<a href="#" class="more isprite btn-addtopic" title="发帖去"></a>
+									</div>
+									<div class="block-ct">
+										<table class="tb-slim" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<thead>
+												<tr>
+													<th class="col-title cell0">文章标题</th>
+													<th class="col-user">作者</th>
+													<th class="col-date">时间</th>
+													<th class="col-vr ">浏览/回复</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+												<tr>
+													<th>
+														<div class="topic-data">
+															<a class="topic-group" href="#" target="_blank">[通知版]</a>
+															<a class="topic-title" href="#" target="_blank">个人中心将显示部分QQ个人动态信息</a>
+														</div>
+													</th>
+													<td>
+														<div class="user-data">
+															<a href="#" target="_blank">
+																<img class="avatar" width="16" height="16" alt="" src="img/avatar16x16.gif"/>
+																某某某某
+															</a>
+														</div>
+													</td>
+													<td>
+														<span class="topic-date">02.16 15:13</span>
+													</td>
+													<td>
+														<span class="topic-vr">10/0</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="block-ft">
+										<a class="more" href="#">更多&gt;&gt;</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<aside class="col-aside-l">
+							<div class="block-groupInfo block-a">
+								<h3>普通群<span class="g-type">[<em>非公开</em>]</span><a href="#" class="isprite btn-upgrade" title="升级群"></a></h3>
+								<ul class="stat-info">
+									<li><span class="lbl">群成员数</span>78/100人</li>
+									<li>
+										<span class="lbl">相册空间</span>
+										<div class="isprite barchart" data-max="10" data-now="3">
+											<div class="isprite barchart-inside" style="width:30%"></div>
+										</div>
+										3/10M
+									</li>
+									<li>
+										<span class="lbl">硬盘空间</span>
+										<div class="isprite barchart" data-max="16" data-now="10">
+											<div class="isprite barchart-inside" style="width:62.5%"></div>
+										</div>
+										10/16M
+									</li>
+								</ul>
+							</div>
+							<nav class="block-nav block-a">
+								<ul>
+									<li class="home"><h3><a href="#">首页</a></h3></li>
+									<li class="bbs on">
+										<h3><a href="#">论坛</a></h3>
+										<ul class="sub-nav dot-list">
+											<li><a href="#">讨论版</a></li>
+											<li><a href="#">贴图版</a></li>
+											<li><a href="#">随写</a></li>
+											<li><a href="#">分享</a></li>
+										</ul>
+									</li>
+									<li class="album"><h3><a href="#">相册</a></h3></li>
+									<li class="gtalk"><h3><a href="#">群聊天记录</a></h3></li>
+									<li class="gmember"><h3><a href="#">群成员</a></h3></li>
+								</ul>
+							</nav>
+						</aside>
+						<aside class="col-aside-r">
+							<div class="block-groupActs block-b">
+								<div class="block-b-inside">
+								<div class="block-ct">
+									<a href="#" target="_blank" class="isprite btn-money"></a>
+									<a href="#" target="_blank" class="isprite btn-money1"></a>
+								</div>
+								</div>
+							</div>
+							<div class="block-groupUsers block-c">
+								<div class="block-c-inside">
+									<div class="block-hd">
+										<h4>成员列表</h4>
+									</div>
+									<div class="block-ct">
+										<ul id="list-member">
+											<li class="isprite g-founder">
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li class="isprite g-admin">
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li class="isprite g-admin">
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+											<li>
+												<a target="_blank" href="#">
+													<img width="16" height="16" src="img/avatar16x16.gif" alt="" class="avatar">
+													某某某某
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="block-ft">
+										<a href="#" class="more">更多&gt;&gt;</a>
+									</div>
+								</div>
+							</div>
+						</aside>
 					</div>
-					<div class="block-topics"></div>
+					<!--/col-mask-->
 				</div>
+				<!--/g-equal-l-->
 			</div>
-			<aside class="aside-l grid-col">
-				<div class="block-groupInfo block-a">
-					<h3>普通群<span class="g-type">[<em>非公开</em>]</span><a href="#" class="isprite btn-upgrade" title="升级群"></a></h3>
-					<ul class="stat-info">
-						<li><span class="lbl">群成员数</span>78/100人</li>
-						<li>
-							<span class="lbl">相册空间</span>
-							<div class="isprite barchart" data-max="10" data-now="3">
-								<div class="isprite barchart-inside" style="width:30%"></div>
-							</div>
-							3/10M
-						</li>
-						<li>
-							<span class="lbl">硬盘空间</span>
-							<div class="isprite barchart" data-max="16" data-now="10">
-								<div class="isprite barchart-inside" style="width:62.5%"></div>
-							</div>
-							10/16M
-						</li>
-					</ul>
-				</div>
-				<nav class="block-nav block-a">
-					<ul>
-						<li class="home"><h3><a href="#">首页</a></h3></li>
-						<li class="bbs on">
-							<h3><a href="#">论坛</a></h3>
-							<ul class="sub-nav dot-list">
-								<li><a href="#">讨论版</a></li>
-								<li><a href="#">贴图版</a></li>
-								<li><a href="#">随写</a></li>
-								<li><a href="#">分享</a></li>
-							</ul>
-						</li>
-						<li class="album"><h3><a href="#">相册</a></h3></li>
-						<li class="gtalk"><h3><a href="#">群聊天记录</a></h3></li>
-						<li class="gmember"><h3><a href="#">群成员</a></h3></li>
-					</ul>
-				</nav>
-			</aside>
-			<aside class="aside-r grid-col">
-				<div class="block-groupActs block-b"></div>
-				<div class="block-groupUsers block-c"></div>
-			</aside>
+			<!--/g-equalh-m-->
 		</div>
 	</section>
 	<footer id="footer" class="wrap"></footer>
