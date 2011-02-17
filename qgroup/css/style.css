@@ -58,12 +58,14 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 #pop-igroups{position:relative;}
 #btn-igroups{border:1px solid #4caae8;padding:2px 0;background-color:#def0ff;text-decoration:none;color:#0066a4;background-position:-78px -434px;}
 #btn-igroups span{border:1px solid #c5e5ff;padding:1px 18px 1px 7px;}
-#pop-igroups-ct{border:1px solid #4caae8;padding:3px;background-color:#def0ff;position:relative;}
+#pop-igroups-ct{border:1px solid #4caae8;padding:3px;background-color:#def0ff;position:absolute;margin-top:-2px;z-index:1000;width:161px;}
 #pop-igroups-ct .slide-mask,#pop-igroups-ct .slide-bar{float:left;}
 #pop-igroups-ct .slide-mask{width:145px;height:146px;overflow:hidden;background:#fff;}
 #pop-igroups-ct .slide-bar{height:146px;width:15px;background:background-color:#def0ff;border-left:1px solid #c4e2f7;position:relative;}
 #pop-igroups-ct .btn-slide-up,#pop-igroups-ct .btn-slide-dwn{width:14px;height:14px;display:block;position:absolute;border-right:1px solid #fff;border-bottom:1px solid #fff;left:0;top:0;background-position:-150px -464px;}
 #pop-igroups-ct .btn-slide-dwn{bottom:0;top:auto;background-position:-150px -477px;}
+#pop-igroups-ct .slider-wrap{position:absolute;width:15px;height:116px;top:15px;left:0;}
+#pop-igroups-ct .slider{cursor:pointer;position:relative;width:14px;height:50px;background:#c4e2f7;border-right:1px solid #fff;border-bottom:1px solid #fff;}
 #list-igroup li{height:20px;line-height:20px;padding-left:12px;border-bottom:1px solid #c5e5ff;width:145px;overflow:hidden;}
 
 #banner{border:1px solid #458bc1;background:url(../img/banner_bg5x70.jpg) center center repeat-x;color:#fff;}
