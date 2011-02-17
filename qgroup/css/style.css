@@ -109,7 +109,7 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 .block-notice{height:132px;padding:10px;}
 .block-notice .notice-icon{float:left;margin-right:10px;padding:5px;background:#c5e5ff;border:1px solid #8dc7f0}
 .block-notice .notice-title{font-weight:bold;margin-top:14px;}
-.block-notice .notice-ct{line-height:21px;margin-top:14px;}
+.block-notice .notice-ct{line-height:21px;margin-top:16px;}
 
 .block-topics .block-hd,.block-topics .block-ft{height:25px;line-height:25px;}
 .block-topics .block-ct{border-top:2px solid #d6d8da;padding-top:2px;}
@@ -124,14 +124,16 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 /* right column
 -----------------------------------------*/
 .col-aside-r .block-hd,.col-aside-r .block-ct{padding:4px;}
-#list-member{margin-top:6px;border-top:1px solid #d6d6d6;padding-top:6px;}
+#list-member{margin-top:4px;border-top:1px solid #d6d6d6;padding-top:6px;}
 #list-member li{height:22px;line-height:22px;padding-left:23px;}
 #list-member .avatar{padding-right:5px;}
-#list-member .g-founder{background-position:0 -366px;}
-#list-member .g-admin{background-position:0 -392px;}
+#list-member .g-founder{background-position:4px -362px;}
+#list-member .g-admin{background-position:4px -388px;}
 .block-groupActs a{display:block;width:152px;height:21px;background-position:0 -276px;}
 .block-groupActs .btn-money1{margin-top:4px;background-position:0 -307px;}
 .block-groupUsers{margin-top:4px;}
-.block-groupUsers .block-ft{height:25px;line-height:20px;border-top:1px solid #d6d8da;margin-top:8px;}
+.block-groupUsers .block-ft{height:25px;line-height:20px;border-top:1px solid #d6d8da;margin-top:3px;}
 /* #footer */
-#footer{height:62px;margin-top:10px;border-top:2px solid #8dc7f0;padding:22px 0;}
+#footer{height:62px;margin-top:10px;border-top:2px solid #8dc7f0;padding:20px 0;text-align:center;line-height:22px;}
+#footer .extra,#footer .cpr{color:#818181}
+#footer a{padding-right:8px;}
