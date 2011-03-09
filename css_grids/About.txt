@@ -1,0 +1,61 @@
+Common css grid layout systems via {gridsystemgenerator.com}
+
+PART1 common css files
+
+1,reset.css
+
+You know that...
+
+2,text.css
+
+You should also know that~
+
+PART2 grid layout files
+
+1,1000px
+
+   Gutter 20
+
+  1000_20_10_10.css (Recommended! Valid width is 980px)
+  1000_25_10_10.css (Recommended! Valid width is 980px)
+
+   Gutter 10
+
+  1000_20_5_5.css (Recommended! Valid width is 990px)
+  1000_25_5_5.css (Recommended! Valid width is 990px)
+
+2,990px
+  
+  Gutter 20
+
+  990_18_10_10.css
+
+  Gutter 10
+
+  990_33_5_5.css (Recommended! Valid width is 980px)
+  990_18_5_5.css
+  990_11_5_5.css
+
+3,980px
+
+   Gutter 20
+
+  980_14_10_10.css
+
+   Gutter 10
+
+  980_14_5_5.css
+  980_28_5_5.css
+
+2,960px
+
+   Gutter 20
+
+  960_12AND16_10_10.css (Recommended! Valid width is 940px)
+
+   Gutter 10
+
+   960_12_5_5.css (Recommended! Valid width is 950px)
+
+
+
