@@ -1,0 +1,93 @@
+h1{
+	font-size:16px;
+}
+#header{
+	margin-bottom:10px;
+	padding:20px 0;
+}
+#page{margin-bottom:50px;}
+#footer{margin-bottom:50px;}
+
+#header,#page,#footer{
+	min-height:50px;
+	height:auto !important;
+	height:50px;
+	background:#eee;
+}
+
+#layout-demo{
+	background:#c4c0be url(../images/background_light_slice.jpg) repeat-x;
+}
+
+#layout-demo #footer {
+	background:url(../images/background_footer.jpg) repeat-x #131211;
+	padding:40px;
+	min-height:130px;
+	height:auto !important;
+	height:130px;
+	font-size:10px;
+	margin-bottom:0;
+}
+#footer h3 {
+	color:#e2dddc;
+	text-transform:uppercase;
+	font-size:1.2em;
+}
+/* 有时候需要利用body的id提升css选择器的权重 */
+
+/* layout2Col.html样式
+---------------------------------------------------------------*/
+.sub-title{font-size:0.8em;}
+#layout-demo #header{
+	background:url(../images/background_light.jpg) no-repeat;
+}
+#layout-demo #page{
+	background:none;
+}
+#logo img{
+	border:2px solid #eee;
+}
+
+.layout-tip{
+	position:absolute;
+	top:0;
+	right:0;
+	background:#ffffc2;
+	color:red;
+	font-size:0.8em;
+}
+
+.project-logo{
+	float:left;
+	padding:30px 0 30px 30px;
+}
+#project-featured .project-info{
+	padding-left:460px;
+}
+#project-featured h2{
+	font-size:36px;
+}
+#project-featured .wdg-hd{
+	padding-top:30px;
+}
+
+.col2-m-l .col-m .wdg-rect{
+	margin-bottom:10px;
+}
+.col2-m-l .col-m .wdg-core{
+	padding:25px 30px 15px;
+}
+
+.topic-thumb{
+	float:left; 
+	margin:25px 20px 0 30px; 
+	border:1px solid #979390; 
+}
+
+#site-intro h2{
+	color:#f1f1f1;
+}
+
+#fav-links li{
+	line-height:24px;
+}

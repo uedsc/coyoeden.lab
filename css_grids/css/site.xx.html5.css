@@ -1,0 +1,10 @@
+#logo img{
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+.wdg-rect .wdg-img,.wdg-aside{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}

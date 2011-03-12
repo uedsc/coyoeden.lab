@@ -1,0 +1,86 @@
+/*  部件/组件(widget)的布局 */
+/* 按钮
+----------------------------------------*/
+.wdg-btn {
+	background:#32312f url(../images/button_bg.jpg) repeat-x;
+	padding:5px 10px 5px 10px;
+	color: #ffffff;
+	text-decoration: none;
+	border:1px solid #32312f;
+	text-transform:uppercase;
+	font-size:9px;
+	line-height:25px;	
+}
+.wdg-btn:hover {
+	background:#007de2 url(../images/button_bg_o.jpg) repeat-x;
+	border-color:#007de2;
+}
+
+/* 导航条
+----------------------------------------*/
+.wdg-hnav ul{float:right;}
+.wdg-hnav li{float:left;display:inline;margin:0 12px 0 0;}
+.wdg-hnav a {
+	text-decoration:none;
+	color:#716d6a;
+	font:bold 10px;
+	text-transform:uppercase;
+}
+.wdg-hnav a.active{
+	color:#211e1e;
+}
+.wdg-hnav a:hover{
+	color:#fff;
+} 
+
+/* 方形部件-样式1
+-----------------------------------------*/
+.wdg-rect {
+	border:1px solid #a3a09e;
+	background-color:#ffffff;
+	margin-bottom:20px;
+	position:relative;
+}
+.wdg-rect .wdg-core{
+	border:1px solid #ffffff;
+	background: #ffffff url(../images/background_block_slice.jpg) repeat-x;	
+	padding:30px;
+}
+.wdg-hd,.wdg-bd,.wdg-ft{
+	margin:0 0 15px;
+}
+.wdg-ft{
+	padding-top:15px;
+}
+.wdg-rect .wdg-img{
+	border:1px solid #b5b5b5;
+	padding:5px;
+	background:#d2d2d2;
+}
+.wdg-ribbon {
+	position:absolute;
+	top:-3px;
+	right:-3px;
+}
+
+/* 方形部件-深色
+-----------------------------------------------------*/
+.wdg-rect-dark{
+	border:1px solid #A3A09E;
+}
+.wdg-rect-dark .wdg-core{
+	background:#E2DDDC;
+}
+
+/* 边栏的部件
+-----------------------------------------------------*/
+.wdg-aside{
+	margin-left:25px;
+	padding:5px 5px 0 5px;
+}
+.wdg-aside .wdg-core{
+	padding:10px;
+}
+.wdg-aside .wdg-hd{
+	color:#666;
+}

@@ -3,10 +3,15 @@
 
 body {
 	font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	color:#7F7D78;
 }
-
+a {
+	color:#26689f;
+	text-decoration:none;
+}
+a:hover { text-decoration:underline; }
 a:focus {
-	outline: 1px dotted;
+	outline: none;
 }
 
 hr {
@@ -25,10 +30,12 @@ h1 {
 
 h2 {
 	font-size: 23px;
+	color:#000;
 }
 
 h3 {
 	font-size: 21px;
+	color:#000;
 }
 
 h4 {
@@ -50,12 +57,8 @@ ol {
 	list-style: decimal;
 }
 
-ul {
-	list-style: disc;
-}
-
 li {
-	margin-left: 30px;
+	margin-left: 15px;
 }
 
 p,
