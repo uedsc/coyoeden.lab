@@ -33,6 +33,10 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 .g-3col .col-main {
 	width:100%;			/* width of center column content (column width minus padding on either side) */
 	left:auto;			/* override inheritted values */
+	/*
+	height:0;
+	overflow:visible;
+	*/
 }
 .g-3col .col-main-core{margin:0 177px 0 187px;}
 .g-3col .col-aside-l {
@@ -43,8 +47,11 @@ h3{font-size:14px;font-weight:bold;line-height:24px;}
 }
 .g-3col .col-aside-r {
 	width:170px;/*170-0-0*/			/* Width of right column content (column width minus padding on either side) */
+	
 	left:auto;		/* override inheritted values */
 	margin-left:-170px;	/* width of right column  */
+	float:right;
+	
 }
 /* header */
 #top-nav{height:28px;line-height:28px;}

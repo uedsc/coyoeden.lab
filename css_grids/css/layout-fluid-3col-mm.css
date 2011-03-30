@@ -1,0 +1,47 @@
+ body{padding: 0px 25px 25px 25px; }
+ #header,#page,#footer{
+ 	overflow:hidden;
+ }
+ * html #page, * html #header, * html #footer { height: 1%; }
+
+/* 3 columns fluid layout
+ -------------------------------------------------------------------------------------------------*/
+.g-col3-mm{ 
+	/* note: g-col3-mm means the layout that of which main column lies on the middle side! */
+	overflow:hidden;
+	zoom:1;
+}
+.g-col3-mm .col-m{
+	float: left; 
+	width: 100%; 
+	min-height:1px;
+}
+.g-col3-mm .col-m-inner{
+	/* margin-computed by aside-x ,aside-y and gutters */
+	margin-right:185px; /* 160 +25*/
+	margin-left:325px; /* 300+25  */
+}
+.g-col3-mm .col-aside,.g-col3-mm .col-m-inner{
+	min-height:50px;
+	height:auto !important;
+	height:50px;
+}
+.g-col3-mm .col-aside-y{
+	/* default width - you can override it in your page stylesheet */
+	width:160px;
+	margin-left:-160px;
+	float:right;
+}
+.g-col3-mm .col-aside-x{
+	/* default width - you can override it in your page stylesheet */
+	width:300px;
+	float:left;
+	margin-left:-100%;
+}
+
+/* equal height column layout
+ ------------------------------------------------------------------------------------------------*/
+.g-equalh .col-aside,.g-equalh .col-m{
+	padding-bottom: 32767px;
+    margin-bottom: -32767px;
+}
