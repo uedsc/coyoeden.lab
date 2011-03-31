@@ -1,7 +1,7 @@
 /* equtal test */
 .col-aside{background:#eee;}
 .col-aside-x{background:#999;}
-.col-m{background:#666;}
+.g-col3-mm .col-m,.g-col3-mr .col-m-inner,.g-col3-ml .col-m-inner{background:#666;}
 /* /equtal test */
 
 /* Header 
@@ -64,7 +64,7 @@
 
 /* Center 
 ############################################################################################################## */
-#page {padding: 25px 0px;}
+#page {padding: 25px 0 0 0;}
 
 /* Center 
 ############################################################################################################## */

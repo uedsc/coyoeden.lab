@@ -12,6 +12,7 @@
 	zoom:1;
 }
 .g-col3-ml .col-m{
+	/* make sure that col-m's height is 0 in order to float col-aside correctly */
 	/* margin-computed by aside-x ,aside-y and gutters */
 	margin-right:515px; /* 160 +25+300+30 */
 }
@@ -37,9 +38,10 @@
 	width:300px;
 }
 
-/* equal height column layout
+/* equal height column layout,notice that we use col-m-inner here instead of col-m,
+   because col-m's height is 0
  ------------------------------------------------------------------------------------------------*/
-.g-equalh .col-aside,.g-equalh .col-m{
+.g-equalh .col-aside,.g-equalh .col-m-inner{
 	padding-bottom: 32767px;
     margin-bottom: -32767px;
 }

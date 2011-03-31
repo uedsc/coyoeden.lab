@@ -7,11 +7,12 @@
 /* 3 columns fluid layout
  -------------------------------------------------------------------------------------------------*/
 .g-col3-mr{ 
-	/* note: col-m-l means the main column lies on the right side! */
+	/* note: g-col3-mr means the main column lies on the right side! */
 	overflow:hidden;
 	zoom:1;
 }
 .g-col3-mr .col-m{
+	/* make sure that col-m's height is 0 in order to float col-aside correctly */
 	/* margin-computed by aside-x ,aside-y and gutters */
 	margin-left:515px; /* 160 +25+300+30 */
 }
@@ -37,9 +38,10 @@
 	width:300px;
 }
 
-/* equal height column layout
- ------------------------------------------------------------------------------------------------*/
-.g-equalh .col-aside,.g-equalh .col-m{
+/* equal height column layout,notice that we use col-m-inner here instead of col-m which is different from layout-fluid-3col-mm.css,
+   because col-m's height is 0
+ -----------------------------------------------------------------------------------------------------------------------------------*/
+.g-equalh .col-aside,.g-equalh .col-m-inner{
 	padding-bottom: 32767px;
     margin-bottom: -32767px;
 }
