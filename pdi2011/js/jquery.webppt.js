@@ -9,19 +9,67 @@
 	p.model = function($d,opts){
 		this.opts=opts||{};
 		this.View={
-			layout:$d
+			$layout:$d
 		};
 		this.init();
 	};
 	p.model.prototype = {
 		init:function(){
-			this.View.frames=this.View.layout.find(this.opts.css_frame);
-			this.View.current=this.View.frames.eq(0);
+			this.isAnimating=false;
+			this.initView();
 			this.bindEvts();
+		},
+		initView:function(){
+			var me=this;
+			this.View.$frames=this.View.$layout.find(this.opts.css_frame);
+			this.View.$navs=$(this.opts.css_frame_nav).children();
+			this.View.$current=this.View.$frames.eq(0);
+
+			//entry nav
+			this.View.$frames.each(function(i,o){
+
+				o = $(o);
+
+				var $entrys=o.find("."+me.opts.cl_entry),
+					entryHtml="";
+
+				if($entrys.length>0){
+					o.data("entrys",$entrys);
+					entryHtml = '<div class="'+me.opts.cl_entry_nav+'">';
+					$entrys.each(function(){
+						entryHtml+='<a href="#"></a>';
+					});
+					entryHtml +='</div>';
+
+					o.append(entryHtml).find('.'+me.opts.cl_entry_nav+' a')
+						.click(function(e){
+							var $this=$(this);
+							if($this.hasClass("on")){
+								me.hideEntry($this.removeClass("on").index(),o);
+							}else{
+								me.showEntry($this.addClass("on").index(),o);
+							}
+							return false;
+						});
+				}
+
+			});
+
+		},
+		showEntry:function(idx,$frame){
+			$frame.data("entrys").eq(idx).fadeIn();
+		},
+		hideEntry:function(idx,$frame){
+			$frame.data("entrys").eq(idx).fadeOut();
 		},
 		bindEvts:function(){
 			var me=this;
 			$(document).keydown(function(e) {
+
+				if( me.isAnimating ){
+					return;
+				}
+
 				var key = 0;
 				if (e == null) {
 					key = event.keyCode;
@@ -46,41 +94,67 @@
 						break;
 				}
 			});
+
+			this.View.$navs.click(function(e){
+				var idx0=me.currentIdx(),
+					$me=$(this),
+					idx1=$me.index();
+
+				if( (idx1==idx0) || (me.isAnimating) ){
+					return false;
+				}
+				if(idx1<idx0){
+					me.animateTo(me.View.$frames.eq(idx1),true);
+				}else{
+					me.animateTo(me.View.$frames.eq(idx1),false);
+				}
+
+				me.activeNav(idx1);
+				return false;
+			});
+		},
+		activeNav:function(idx){
+			this.View.$navs.removeClass("on").eq(idx).addClass("on");
+		},
+		currentIdx:function(){
+			return this.View.$current.index();
+		},
+		animateTo:function($t,isBack){
+			var me=this,
+				css_in='slide in'+(isBack?' reverse':''),
+				css_out='slide out'+(isBack?' reverse':'');
+
+			this.isAnimating=true;
+
+			$t.addClass(this.opts.cl_active+' '+css_in)
+				.animationComplete(function(e){
+					$t.removeClass(css_in);
+				});
+			this.View.$current.addClass(css_out)
+				.animationComplete(function(e){
+					me.isAnimating=false;
+					me.View.$current.removeClass(me.opts.cl_active+' '+css_out);
+					me.View.$current=$t;
+					me.activeNav(me.currentIdx());
+				});
 		},
 		toPrev:function(){
-			var $t = this.View.current.prev(),
-				me=this;
+			var $t = this.View.$current.prev();
 			if ($t.length == 0)
 			{
 				return;
 			}
-			$t.addClass(this.opts.cl_active+' slide in reverse')
-				.animationComplete(function(e){
-					$(this).removeClass('slide in reverse');
-				});
-			this.View.current.addClass('slide out')
-				.animationComplete(function(e){
-					$(this).removeClass(me.opts.cl_active+' slide out');
-					me.View.current=$t;
-				});
 
+			this.animateTo($t,true);
 		},
 		toNext:function(){
-			var $t = this.View.current.next(),
+			var $t = this.View.$current.next(),
 				me=this;
 			if ($t.length == 0 || (!$t.hasClass('wdg-frame')))
 			{
 				return;
 			}
-			$t.addClass(this.opts.cl_active+' slide in')
-				.animationComplete(function(e){
-					$(this).removeClass('slide in');
-				});
-			this.View.current.addClass('slide out reverse')
-				.animationComplete(function(e){
-					$(this).removeClass(me.opts.cl_active+' slide out reverse');
-					me.View.current=$t;
-				});
+			this.animateTo($t,false);
 		}
 	};
 
@@ -96,6 +170,9 @@
     // Public defaults.
     $.fn.WebPPT.defaults = {
 		css_frame:'.wdg-frame',
+		css_frame_nav:'.wdg-frame-nav',
+		cl_entry:'wdg-entry',
+		cl_entry_nav:'wdg-entry-nav',
 		cl_active:'frame-on'
     };
 
