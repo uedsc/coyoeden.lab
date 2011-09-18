@@ -78,6 +78,11 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 
+			if (!$.browser.webkit)
+			{
+				alert('请使用webkit核心的浏览器chrome或者safari浏览！！！！！');
+			}
+
 			//webppt
 			$(".wdg-player").WebPPT({
 				onPreNav:function(){
