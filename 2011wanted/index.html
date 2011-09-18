@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>腾讯会员设计中心-2011前端通缉令</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/effects.css" />
+		<link rel="stylesheet" type="text/css" href="css/site.css" />
+
+		<script src="js/jquery-1.6.3.min.js"></script>
+		<script src="js/jquery.webppt-min.js"></script>
+	</head>
+	<body>
+		<div class="w-33">
+			<div class="g-33">
+				<div class="wdg-player">
+					<!--FRAME1-->
+					<section class="wdg-frame frame1 frame-on">
+						<figure class="wdg-cover">
+							<img src="img/cover.png" width="600" height="750" title="发送简历至feeling@tencent.com" />
+						</figure>
+						<h3>VipQQ 2011 @ ISUX,U are Wanted!!</h3>
+						<h4>2011年9月18日 11:00</h4>
+					</section>
+					<!--FRAME2-->
+					<section class="wdg-frame frame2">
+						<figure class="wdg-cover wdg-polaroids">
+							<img src="img/bed-s.jpg" width="300" height="400" alt="午休没床我们宁可不睡..."/>
+							<img src="img/funsport-s.jpg" width="250" height="290" alt="饭后我们可以用吉他消化食物，我们喜欢打篮球！！！"/>
+							<img src="img/sado-s.jpg" width="150" height="150" alt="不喜欢吉他的，有美眉帅哥陪你茶道...呃!!"/>
+							<img src="img/rockdevice-s.jpg" width="200" height="260" alt="拿你喜欢的设备听你喜欢的xxoo..."/>
+							<img src="img/staff-s.jpg" width="140" height="200" alt="没什么，我的杂物"/>
+							<img src="img/workspace-s.jpg" width="300" height="287" alt="虽然不能变形IMAC,但是也够用了的"/>
+						</figure>
+						<div id="J_frame2_tip" class="wdg-tip">
+							午休没床我们宁可不睡...
+						</div>
+					</section>
+					<!--FRAME3-->
+					<section class="wdg-frame frame3">
+						<figure class="wdg-cover">
+							<img class="thumb" src="img/the6th-s.jpg" width="180" height="180"/>
+							<img class="full" src="img/the6th.jpg" width="480" height="580" />
+						</figure>
+						<div class="wdg-tip">
+							The 6th，第6人...<br/>
+							Who's the 7th?<br/>
+							发送简历至:<br/><a href="mailto:feeling@tencent.com">feeling@tencent.com</a>
+						</div>
+					</section>
+					<!--FRAME4-->
+					<section id="J_pop1" class="wdg-pop pop1">
+						<figure class="wdg-cover">
+							<img src="img/bed.jpg" />
+						</figure>
+					</section>
+
+					<div class="wdg-frame-nav">
+						<a href="#" class="on">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+					</div>
+
+					<!--GATES-->
+					<div class="wdg-gate-l"></div>
+					<div class="wdg-gate-r"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			//webppt
+			$(".wdg-player").WebPPT({
+				onPreNav:function(){
+					frame2.popView.$layout.removeClass('frame-on flip in out');
+				}
+			});
+
+			//frame2
+			var frame2= {
+				init:function(){
+					$(".wdg-polaroids img").mouseenter(function(e){
+						frame2.showTip( this.getAttribute('alt') );
+					}).click(function(e){
+						frame2.showPop(this.src);
+					});
+
+					this.popView.$layout.click(function(e){
+						frame2.hidePop();
+					});
+				},
+				showTip:function(txt){
+					$("#J_frame2_tip").hide().html(txt).fadeIn();
+				},
+				showPop:function(src){
+					this.popView.$layout.removeClass('frame-on flip in out');
+					this.popView.$img[0].src=src.replace('-s.jpg','.jpg');
+					this.popView.$layout.addClass('frame-on flip in');
+				},
+				hidePop:function(){
+					this.popView.$layout.addClass('flip out').animationComplete(function(e){
+						$(this).removeClass('frame-on flip in out');
+					});
+				},
+				popView:{
+					$layout:$("#J_pop1"),
+					$img:$("#J_pop1 img")
+				}
+			};
+			frame2.init();
+
+		});
+	</script>
+</html>
